@@ -1,6 +1,28 @@
 body {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
   width: 100%;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #343233;
+}
+
+.container {
+  background-color: antiquewhite;
+  border-radius: 50%;
+  box-shadow: inset rgba(0,0,0,.6) 60px -30px 60px;
+}
+
+.satellite {
+  transform: rotate(240deg);
+  width: 500px;
+  height: 500px;
+}
+
+.satellite__element {
+  width: 30px;
+  height: 30px;
+  z-index: 100;
 }
