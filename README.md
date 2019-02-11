@@ -1,3 +1,7 @@
+### `npm install`
+
+Install dependencies from package.json
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
