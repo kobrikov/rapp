@@ -6,7 +6,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #343233;
+  background-color: black;
 }
 
 .container {
@@ -21,9 +21,15 @@ body {
 .earth {
   width: 100px;
   height: 100px;
-  background-color: antiquewhite;
   border-radius: 50%;
-  box-shadow: inset rgba(0, 0, 0, 0.6) 60px -30px 60px;
+  position: relative;
+}
+
+.rocket {
+  position: absolute;
+  width: 20px;
+  left: 40px;
+  top: -30px;
 }
 
 .orbit {
@@ -36,10 +42,6 @@ body {
   animation: orbit 5s linear infinite;
 }
 
-.orbit:nth-child(10) {
-  animation-duration: 10s;
-}
-
 .orbit__satellite {
   width: 15px;
   height: 15px;
@@ -47,10 +49,10 @@ body {
 }
 
 @keyframes orbit {
-  0% {
+  from {
     transform:rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(360deg);
   }
 }
